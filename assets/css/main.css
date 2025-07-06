@@ -334,7 +334,7 @@ input, select, textarea {
 }
 
 .at-title h2 {
-  font-size: 22px;
+  font-size: 22px !important;
   font-weight: 600;
   padding: 10px 15px;
   margin: 0;
