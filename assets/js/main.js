@@ -4,6 +4,22 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+var acc = document.getElementsByClassName("accordion");
+var accord;
+
+for (accord = 0; accord < acc.length; accord++) {
+  acc[accord].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
 (function($) {
 
 	var	$window = $(window),
