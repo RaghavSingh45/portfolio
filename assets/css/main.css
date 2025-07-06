@@ -291,6 +291,7 @@ input, select, textarea {
 .accordion {
   max-width: 1170px;
   margin: 40px auto 0;
+  text-align: left;
 }
 
 .at-tab {
