@@ -4,20 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$(document).ready(function () {
-  $(".at-title").click(function () {
-    $(this)
-      .toggleClass("active")
-      .next(".at-tab")
-      .slideToggle()
-      .parent()
-      .siblings()
-      .find(".at-tab")
-      .slideUp()
-      .prev()
-      .removeClass("active");
-  });
-});
 
 
 
@@ -271,5 +257,18 @@ $(document).ready(function () {
 			});
 
 		}
+		
+		$(".at-title").click(function () {
+    $(this)
+      .toggleClass("active")
+      .next(".at-tab")
+      .slideToggle()
+      .parent()
+      .siblings()
+      .find(".at-tab")
+      .slideUp()
+      .prev()
+      .removeClass("active");
+  });
 
 })(jQuery);
