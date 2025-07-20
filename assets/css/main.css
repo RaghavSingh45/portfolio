@@ -32,6 +32,10 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+.center {
+  justify-content: center;
+  text-align: center;
+}
 
 ol, ul {
 	list-style: none;
