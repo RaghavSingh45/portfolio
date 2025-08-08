@@ -279,11 +279,11 @@ $(document).ready(function() {
     });
   });
   
-  $('.track-click').on('click', function() {
+  $('.scholar-click').on('click', function() {
   var label = $(this).text().trim(); // use button text as label
-  gtag('event', 'button_click', {
+  gtag('event', 'google_scholar_click', {
     'event_category': 'engagement',
-    'event_label': label
+    'event_label': 'Google scholar button'
   });
 });
 })(jQuery);
