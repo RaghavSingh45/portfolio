@@ -270,5 +270,20 @@
       .prev()
       .removeClass("active");
   });
-
+$(document).ready(function() {
+    $('#resume-btn').on('click', function() {
+      gtag('event', 'resume_click', {
+        'event_category': 'engagement',
+        'event_label': 'Resume button'
+      });
+    });
+  });
+  
+  $('.track-click').on('click', function() {
+  var label = $(this).text().trim(); // use button text as label
+  gtag('event', 'button_click', {
+    'event_category': 'engagement',
+    'event_label': label
+  });
+});
 })(jQuery);
